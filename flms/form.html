@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Leave Form</title>
+    <link href="images/u.png" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+    
+</head>
+<body>
+   
+    <div class="container">  
+        <form id="contact" action="register.php" method="post">
+            <div class="row">
+                <div class="column">
+                    <img src="images/u.png">
+                </div>
+                <div class="column">
+                    <h3>Faculty Leave Form</h3>
+                </div>
+            </div>
+            
+            <h4>All fields are required</h4>
+            
+            <label for="name">Name: </label>
+            <input placeholder="Your name" name="name" type="text" id="name" required>
+            
+            <label for="departement">Departement: </label>
+            <input type="text" name="dp" placeholder="Enter departement" required>
+            
+            <label for="desg">Designation</label>
+            <input placeholder="Your Designation" name="dg" type="text" required>
+            
+            <lable for="code">Emp Code: </lable>
+            <input placeholder="Your employe code" name="ec" type="text" required>
+            
+            <lable for="hod">HOD Name: </lable>
+            <input placeholder="Your HOD Name" name="hod" type="text" required>
+            
+            <label for="replace">Rplacement Faculty: </label>
+            <input type="text" id="replace" name="rf" placeholder="Replacement" required>
+            
+            <lable for="leaves">No. of Leaves: </lable>
+            <input placeholder="Numbers of leave" name="nol" type="number" id="leaves" required> 
+            
+            <label>Date</label>
+            <div class="row">
+                <div class="column">
+                    <label for="form">From: </label>
+                    <input type="date" id="from" name="from" required>  
+                </div>
+                <div class="column">
+                    <label for="to">To: </label>
+                    <input type="date" name="to" id="to" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <button name="submit" type="submit" id="contact-submit">Submit</button>
+                </div>
+                <div class="column">
+                    <button name="reset" type="reset" id="contact-reset">Reset</button>
+                </div>
+            </div>
+        </form>
+      </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="images/u.png" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <title>Leave Portal | PIET</title>
+</head>
+
+<body>
+  <div class="handf">
+    <img src="images/r.png" alt="Poornima Institute of Engineering and Technology" class="im">
+  </div>
+  <div class="t">
+    <button class="tablink" onclick="openPage('Faculty', this, '#ebebeb')" id="first" >Faculty</button>
+    <button class="tablink" onclick="openPage('Admin', this, '#ebebeb')">Admin</button>
+  
+<form action="login.php" method="post"> 
+    <div id="Faculty" class="tabcontent">
+      <h1>
+          Faculty Login
+      </h1>
+      <div class="form">
+          <input type="text" id="username" placeholder="Email" name="un" size="30"/><br> 
+          <input type="password" id="password" placeholder="Password" name="ps" size="30"/><br>
+          <button type="submit">
+              Login
+          </button>
+      </div>
+    </div>
+</form>
+<form action="login.php" method="post"> 
+    <div id="Admin" class="tabcontent">
+      <h1>
+        Admin Login
+      </h1>
+      <div class="form">
+        <input type="text" id="username" placeholder="Email" name="aun" size="30"/><br> 
+        <input type="password" id="password" placeholder="Password" name="aps" size="30"/><br>
+        <button id="login" type="submit">
+          Login
+        </button>
+      </div>
+    </div>
+  </form>
+
+
+  </div>
+
+  <div class="handf">
+    <text> &#169; Poornima Institute of Engineering and Technology</text>
+  </div>
+
+  <script>
+      function openPage(pageName,elmnt,color) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+         tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(pageName).style.display = "block";
+        elmnt.style.backgroundColor = color;
+     }
+
+     document.getElementById("first").click();
+  </script>
+
+</body>
+</html> 

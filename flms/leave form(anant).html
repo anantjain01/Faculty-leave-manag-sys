@@ -1,0 +1,94 @@
+<!-- <?php
+    require 'flms/form.php';
+
+?>
+<?php
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $database = "flms";
+
+    $conn=mysqli_connect($servername, $username, $password, $database); 
+    if(!$conn){
+        die("sorry we fail to connect".mysqli_connect_error());
+    }
+    else{
+        echo "connection was sucessful";
+    }
+
+        /create database-------->
+
+        <!-- // $sql = "CREATE DATABASE flms";
+        // $result = mysqli_query($conn,$sql);
+        // echo "result is";
+        // echo var_dump($result);
+?>  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Leave Form</title>
+    <link href="images/u.png" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+    
+</head>
+<body>
+   
+    <div class="container">  
+        <form id="contact" action="form.php" method="post">
+            <div class="row">
+                <div class="column">
+                    <img src="images/u.png">
+                </div>
+                <div class="column">
+                    <h3>Faculty Leave Form</h3>
+                </div>
+            </div>
+            
+            <h4>All fields are required</h4>
+            
+            <label for="name">Name: </label>
+            <input placeholder="Your name" type="text" id="name" required>
+            
+            <label for="departement">Departement: </label>
+            <input type="text" placeholder="Enter departement" required>
+            
+            <label for="desg">Designation</label>
+            <input placeholder="Your Designation" type="text" required>
+            
+            <lable for="code">Emp Code: </lable>
+            <input placeholder="Your employe code" type="text" required>
+            
+            <lable for="hod">HOD Name: </lable>
+            <input placeholder="Your HOD Name" type="text" required>
+            
+            <label for="replace">Rplacement Faculty: </label>
+            <input type="text" id="replace" placeholder="Replacement" required>
+            
+            <lable for="leaves">No. of Leaves: </lable>
+            <input placeholder="Numbers of leave" type="number" id="leaves" required> 
+            
+            <label>Date</label>
+            <div class="row">
+                <div class="column">
+                    <label for="form">From: </label>
+                    <input type="date" id="from" required>  
+                </div>
+                <div class="column">
+                    <label for="to">To: </label>
+                    <input type="date" id="to" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <button name="submit" type="submit" id="contact-submit">Submit</button>
+                </div>
+                <div class="column">
+                    <button name="reset" type="submit" id="contact-reset">Reset</button>
+                </div>
+            </div>
+        </form>
+      </div>
+</body>
+</html>

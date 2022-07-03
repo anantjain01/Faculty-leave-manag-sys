@@ -1,0 +1,39 @@
+.topnav {
+    width: 100%;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #333;
+    margin: 0%;
+  }
+  
+  .topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .himg {
+      border-radius: 5px;
+      margin-left: 15px;
+      margin-top: 7px;
+      margin-bottom: 3px;
+      height: 45px;
+      background-color: white;
+  }
+  
+  .handf {
+    border-radius: 5px;
+    text-align: center;
+    background-color: #333;
+    padding: 5px;
+    color: white;
+
+}

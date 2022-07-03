@@ -1,0 +1,11 @@
+.pimg {
+    align-self: center;
+    margin: 0 auto;
+    align-content: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: rgb(226, 226, 226);
+    margin-top: 10%;
+}

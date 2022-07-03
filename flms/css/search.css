@@ -1,0 +1,10 @@
+.search-container{
+    width: 99%;
+    text-align: center;
+    float: center;
+    padding: 6px 10px;
+    margin-top: 2%;
+    background: #ddd;
+    border: none;
+    cursor: pointer;
+  }

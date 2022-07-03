@@ -1,0 +1,30 @@
+.info {
+    width: 99%;
+    height: 40%;
+    background-color: rgb(166, 178, 199);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 60px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 8px;
+  }
+
+  tr:nth-child(even)
+  {background-color: #d1d1d1}
+
+  tr:nth-child(odd)
+  {background-color: #ffffff}
+
+  p {
+      font-size: 17px;
+  }
